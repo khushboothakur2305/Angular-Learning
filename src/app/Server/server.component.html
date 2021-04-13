@@ -1,2 +1,16 @@
-<p>Server Component</p>
+<p>Assignment 2</p>
+<div>
+  <button (click)="displayDetails()" class="btn btn-primary">
+    Display Details
+  </button>
+  <p *ngIf="hideParagraph">Seceret Password = tuna</p>
+  <div *ngFor="let time of List; let index = index">
+    <p
+      [ngStyle]="{ backgroundColor: index >= 5 ? 'blue' : 'transparent' }"
+      [ngClass]="{ online: index >= 5 }"
+    >
+      {{ time }}
+    </p>
+  </div>
+</div>
 <div app-servers></div>
