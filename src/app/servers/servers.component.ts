@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: '[app-servers]',
+  selector: 'app-servers',
   templateUrl: './servers.component.html',
   styleUrls: ['./servers.component.css'],
 })
 export class ServersComponent implements OnInit {
+  @Input() name: string;
   allowNewServer = false;
   Server = 'Cannot Add Server';
   serverCreationStatus = 'No Server Was Created';

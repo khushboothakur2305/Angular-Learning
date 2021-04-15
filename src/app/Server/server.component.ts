@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ServerComponent implements OnInit {
   hideParagraph = true;
   List = [];
+  name = 'Khushboo';
   constructor() {}
   displayDetails() {
     this.hideParagraph = !this.hideParagraph;
