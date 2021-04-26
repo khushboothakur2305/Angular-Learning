@@ -3,7 +3,7 @@
     height: 100%;
     width: 100%;
     background-image: linear-gradient(
-      to bottom left,
+      s to bottom left,
       rgb(255, 119, 85),
       rgb(252, 38, 124)
     );
@@ -22,9 +22,9 @@
     "
   >
     <div class="col-xs-12">
-      <h3>App Component</h3>
+      <h3>{{ title }}</h3>
       <hr />
-      <div class="app-server"></div>
+      <app-server (onDisplayDetail)="ShowDetail($event)"></app-server>
     </div>
   </div>
 </div>

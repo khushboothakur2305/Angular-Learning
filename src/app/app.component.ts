@@ -15,15 +15,16 @@ export class AppComponent {
       'x-rapidapi-host': 'covid-19-data.p.rapidapi.com',
       useQueryString: 'true',
     });
+    const data = {};
     // this.http
-    //   .get(
-    //     `https://covid-19-data.p.rapidapi.com/report/country?name=Italy&date=2020-04-01`,
-    //     {
-    //       headers: this.headers,
-    //     }
-    //   )
+    //   .get(`https://covid-19-data.p.rapidapi.com/country/it`, {
+    //     headers: this.headers,
+    //   })
     //   .subscribe((res) => {
     //     console.log(res);
     //   });
+  }
+  ShowDetail(event) {
+    this.title = event;
   }
 }
