@@ -1,0 +1,8 @@
+<div style="width: 100%; display: flex; justify-content: space-evenly">
+  <button class="btn btn-primary" (click)="startGame()">Start</button>
+  <button class="btn btn-danger" (click)="stopGame()">Stop</button>
+</div>
+<div style="width: 100%; display: flex; justify-content: space-between">
+  <app-odd [Number]="oddArray"></app-odd>
+  <app-even [Number]="evenArray"></app-even>
+</div>

@@ -5,8 +5,18 @@ import { AppComponent } from './app.component';
 import { ServersComponent } from './servers/servers.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { GameControlComponent } from './Assignment4/game-control/game-control.component';
+import { OddComponent } from './Assignment4/odd/odd.component';
+import { EvenComponent } from './Assignment4/even/even.component';
 @NgModule({
-  declarations: [AppComponent, ServerComponent, ServersComponent],
+  declarations: [
+    AppComponent,
+    ServerComponent,
+    ServersComponent,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent,
+  ],
   imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
