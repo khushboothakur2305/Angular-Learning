@@ -42,18 +42,7 @@
           {{ odd }}
         </li>
       </div>
-      <!-- <div *ngIf="onlyOdd">
-        <li
-          class="list-odd-item"
-          [ngClass]="{ odd: odd % 2 !== 0 }"
-          [ngStyle]="{
-            backgroundColor: odd % 2 !== 0 ? 'yellow' : 'transparent'
-          }"
-          *ngFor="let odd of oddNumbers"
-        >
-          {{ odd }}
-        </li>
-      </div> -->
+
       <div *ngIf="!onlyOdd">
         <li
           class="list-odd-item"
@@ -73,3 +62,15 @@
 <p [appBetterHighlight]="'pink'" defaultColor="red">
   Style Me with better directives
 </p>
+<!-- <div *ngIf="onlyOdd">
+        <li
+          class="list-odd-item"
+          [ngClass]="{ odd: odd % 2 !== 0 }"
+          [ngStyle]="{
+            backgroundColor: odd % 2 !== 0 ? 'yellow' : 'transparent'
+          }"
+          *ngFor="let odd of oddNumbers"
+        >
+          {{ odd }}
+        </li>
+      </div> -->
