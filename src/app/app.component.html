@@ -23,7 +23,7 @@
     </div>
   </div>
 </div> -->
-<div class="row">
+<!-- <div class="row">
   <div class="col-xs-12">
     <button class="btn btn-primary" (click)="onlyOdd = !onlyOdd">
       Only show odd numbers
@@ -59,9 +59,9 @@
   </div>
 </div>
 <p appBasicHighlight>Style Me with basic directives</p>
-<p [appBetterHighlight]="'pink'" defaultColor="red">
+<p appBetterHighlight="pink" defaultColor="red">
   Style Me with better directives
-</p>
+</p> -->
 <!-- <div *ngIf="onlyOdd">
         <li
           class="list-odd-item"
@@ -74,3 +74,19 @@
           {{ odd }}
         </li>
       </div> -->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="">Home</a></li>
+        <li role="presentation"><a href="/servers">Servers</a></li>
+        <li role="presentation"><a href="/users">Users</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
